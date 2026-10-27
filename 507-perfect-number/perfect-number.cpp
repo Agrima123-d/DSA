@@ -4,11 +4,11 @@ public:
         if(num<=1){
             return false;
         }
-        int sum=0;
+        int sum=1;
         int original=num;
        
        
-            for(int i=1;i<=num/2;i++){
+            for(int i=2;i<=num/2;i++){
                 if(num%i==0){
                     sum=sum+i;
                 }
