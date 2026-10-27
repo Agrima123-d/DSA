@@ -1,0 +1,21 @@
+class Solution {
+public:
+    bool checkPerfectNumber(int num) {
+        if(num<=1){
+            return false;
+        }
+        int sum=0;
+        int original=num;
+       
+       
+            for(int i=1;i<=num/2;i++){
+                if(num%i==0){
+                    sum=sum+i;
+                }
+
+            
+            }
+        
+        return sum==original;
+    }
+};
